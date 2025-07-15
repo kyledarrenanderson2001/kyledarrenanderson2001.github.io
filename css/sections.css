@@ -1,0 +1,19 @@
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.section-title {
+    margin: 0;
+    color: var(--color-secondary);
+}
+
+.section-divider {
+    height: 2px;
+    background-color: var(--color-primary);
+    margin: var(--space-md) 0;
+    width: 100%;
+    opacity: 0.5;
+}

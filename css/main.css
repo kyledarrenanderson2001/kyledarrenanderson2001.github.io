@@ -1,0 +1,9 @@
+@import 'variables.css';
+@import 'global.css';
+@import 'navbar.css';
+@import 'theme-toggle.css';
+@import 'footer.css';
+@import 'sections.css';
+@import 'skills.css';
+@import 'projects.css';
+@import 'contact.css';

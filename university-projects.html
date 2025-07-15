@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>University Projects | Kyle Anderson Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<div class="navbar-container"></div>
+
+<div class="container">
+  <header>
+    <h1>University Projects</h1>
+    <p class="subtitle">
+      Projects that I have worked on throughout my time at Newcastle
+      University
+    </p>
+  </header>
+
+  <div class="projects-list" id="projects-container"></div>
+</div>
+
+<footer class="footer"></footer>
+
+<script src="js/loader.js" defer></script>
+<script src="js/script.js" defer></script>
+<script type="module">
+  import { loadProjects } from './js/projects.js';
+  window.addEventListener('DOMContentLoaded', () => {
+    // Load navigation and footer (assuming loader.js handles this)
+    // Then load university projects data into the container
+    loadProjects('data/universityProjectData.json', '#projects-container');
+  });
+</script>
+</body>
+</html>

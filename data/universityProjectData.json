@@ -1,0 +1,25 @@
+{
+  "universityProjects": [
+    {
+      "title": "Project Name 1",
+      "description": "Brief Project description, what it does, how it does it, what I did and why.",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        "Feature 1",
+        "Feature 2",
+        "Feature 3",
+        "Feature 4"
+      ],
+      "technologies": [
+        "Language",
+        "Software",
+        "Tools",
+        "Other"
+      ],
+      "link": "#"
+    }
+  ]
+}

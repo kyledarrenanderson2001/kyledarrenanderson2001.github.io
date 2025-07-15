@@ -1,0 +1,92 @@
+:root {
+    /* Timing & Animation */
+    --trans-normal: 0.3s;
+    --trans-slow: 1.5s;
+
+    /* Spacing System */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 3rem;
+
+    /* Radius */
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+    --radius-circle: 50%;
+
+    /* Shadows */
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 9px 20px rgba(0, 0, 0, 0.3);
+
+    /* Typography */
+    --font-main: "Roboto Slab", serif;
+    --font-size-xs: 0.8rem;
+    --font-size-sm: 0.9rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.2rem;
+    --font-size-xl: 1.8rem;
+    --font-size-xxl: 2.5rem;
+
+    /* Common Layout Values */
+    --container-width: 75%;
+    --header-width: 60%;
+    --content-max-width: 1200px;
+
+    /* Component heights */
+    --navbar-height: 100px;
+    --footer-height: 30px;
+    --navbar-padding-large: 12px 24px;
+    --navbar-padding-medium: 10px 15px;
+    --navbar-padding-small: 8px 12px;
+}
+
+/* Theme colors - Light */
+body.lightMode {
+    --color-text: #1c1c1c;
+    --color-bg: #d4e6f5;
+    --color-primary: #4d8ad6;
+    --color-secondary: #3a7fb1;
+    --color-content-bg: #e1efff;
+    --color-accent: #b1c9e6;
+    --color-navbar: #3a5a7a;
+    --color-navbar-text: #ffffff;
+    --color-navbar-text-alt: #4d8ad6;
+}
+
+/* Theme colors - Dark */
+body.darkMode {
+    --color-text: #e0e0e0;
+    --color-bg: #2e3d4d;
+    --color-primary: #4d8ad6;
+    --color-secondary: #232857;
+    --color-content-bg: #2e4f6e;
+    --color-accent: #0f172a;
+    --color-navbar: #2a323a;
+    --color-navbar-text: #ffffff;
+    --color-navbar-text-alt: #9cdbdb;
+}
+
+body {
+    margin: 0;
+    opacity: 1 !important;
+    font-family: var(--font-main), serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color var(--trans-slow) ease;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: var(--footer-height);
+}
+
+/* Common animation effects */
+.hover-lift {
+    transition: transform var(--trans-normal) ease, box-shadow var(--trans-normal) ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}

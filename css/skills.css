@@ -1,0 +1,39 @@
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.skill-tag {
+    background-color: var(--color-primary);
+    color: var(--color-navbar-text);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-sm);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--trans-normal) ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-5px);
+}
+
+.hobbies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--space-sm);
+}
+
+.hobby-item {
+    background-color: var(--color-primary);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    text-align: center;
+    color: var(--color-navbar-text);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--trans-normal) ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-5px);
+}

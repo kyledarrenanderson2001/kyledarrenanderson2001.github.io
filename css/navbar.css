@@ -1,0 +1,69 @@
+.navbar {
+    z-index: 1000;
+    background-color: var(--color-navbar);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: background-color var(--trans-slow) ease;
+    flex-wrap: wrap;
+    max-height: var(--navbar-height);
+}
+
+.navbar a {
+    position: relative;
+    display: block;
+    color: var(--color-navbar-text);
+    text-align: center;
+    padding: var(--navbar-padding-large);
+    text-decoration: none;
+    border-right: 3px solid var(--color-accent);
+    border-radius: 0 var(--radius-pill) var(--radius-pill) 0;
+    font-size: 24px;
+    background-color: var(--color-navbar);
+    transition: all var(--trans-normal) ease;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Creating z-index hierarchy with CSS custom properties */
+.navbar a:nth-child(1) { --nav-index: 0; }
+.navbar a:nth-child(2) { --nav-index: 1; }
+.navbar a:nth-child(3) { --nav-index: 2; }
+.navbar a:nth-child(4) { --nav-index: 3; }
+.navbar a:nth-child(5) { --nav-index: 4; }
+
+.navbar a {
+    z-index: calc(1000 - var(--nav-index, 0));
+}
+
+.navbar a:not(:first-child) {
+    margin-left: -22px;
+    padding-left: 30px;
+}
+
+.navbar a:hover {
+    color: var(--color-navbar-text-alt);
+    background-color: var(--color-accent);
+}
+
+.navbar a.active {
+    background-color: var(--color-accent);
+    color: var(--color-navbar-text-alt);
+}
+
+@media screen and (max-width: 900px) {
+    .navbar a {
+        font-size: 20px;
+        padding: var(--space-xs) var(--space-sm);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar a {
+        font-size: 18px;
+        padding: calc(var(--space-xs) - 2px) var(--space-xs);
+    }
+}

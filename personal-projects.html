@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal Projects | Kyle Anderson Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<div class="navbar-container"></div>
+
+<div class="container">
+  <header>
+    <h1>Personal Projects</h1>
+    <p class="subtitle">
+      Projects that I have worked on either out of curiosity or part of a Game Jam or Hackathon
+    </p>
+  </header>
+
+  <div class="projects-list" id="projects-container">
+    <!-- Projects will be loaded dynamically from projects.js -->
+  </div>
+</div>
+
+<footer class="footer"></footer>
+
+<script src="js/loader.js" defer></script>
+<script src="js/script.js" defer></script>
+<script type="module">
+  import { loadProjects } from './js/projects.js';
+  window.addEventListener('DOMContentLoaded', () => {
+    // Load personal projects JSON into the container
+    loadProjects('data/personalProjectData.json', '#projects-container');
+  });
+</script>
+</body>
+</html>

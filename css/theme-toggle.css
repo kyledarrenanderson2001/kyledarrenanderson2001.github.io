@@ -1,0 +1,88 @@
+.theme-toggle {
+    margin-left: auto;
+    padding-right: var(--space-md);
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: var(--trans-normal);
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: var(--radius-circle);
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: var(--trans-normal);
+}
+
+.sun-icon, .moon-icon {
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity var(--trans-slow) ease;
+}
+
+.sun-icon.visible,
+.moon-icon.visible {
+    opacity: 1;
+}
+
+.sun-icon.fade-out,
+.moon-icon.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+.sun-icon {
+    right: 4px;
+    opacity: 1;
+}
+
+.moon-icon {
+    left: 4px;
+    opacity: 0;
+}
+
+input:checked + .slider {
+    background-color: var(--color-bg);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+input:checked + .slider .sun-icon {
+    opacity: 0;
+}
+
+input:checked + .slider .moon-icon {
+    opacity: 1;
+}
