@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c469c6c-fa6b-419d-8122-0ebd87bab5fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navigation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/projects.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sections.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/skills.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/theme-toggle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/variables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/personalProjectData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/universityProjectData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/projects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-projects.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university-projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752602185906</updated>
-      <workItem from="1752602186952" duration="3998000" />
+      <workItem from="1752602186952" duration="4826000" />
     </task>
     <servers />
   </component>
