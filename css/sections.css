@@ -17,3 +17,19 @@
     width: 100%;
     opacity: 0.5;
 }
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-navbar-text);
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: var(--shadow-md);
+}
+
+.button:hover {
+    transform: translateY(-5px);
+}
