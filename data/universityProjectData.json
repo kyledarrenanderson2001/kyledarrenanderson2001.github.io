@@ -1,25 +1,45 @@
 {
   "universityProjects": [
     {
-      "title": "Project Name 1",
-      "description": "Brief Project description, what it does, how it does it, what I did and why.",
+      "title": "First Unity Game",
+      "description": "My first games engineering coursework for university. A simple platforming game with some basic enemies and physics based puzzles to solve. Different physics affects are applied when the player is above different floor panels. The enemies utilise a simplistic state machine to determine if they will chase the player or roam the level.",
       "mediaType": "singleImage",
       "image": "path/to/image.jpg",
       "videoEmbed": "",
       "carouselImages": [],
       "features": [
-        "Feature 1",
-        "Feature 2",
-        "Feature 3",
-        "Feature 4"
+        "3rd Person Camera Controls",
+        "Box and Button physics puzzles",
+        "State Based Enemy AI",
+        "Basic GUI",
+        "Multiple Physics Based Platforming Challenges"
       ],
       "technologies": [
-        "Language",
-        "Software",
-        "Tools",
-        "Other"
+        "C#",
+        "Unity"
       ],
-      "link": "#"
+      "link": "https://github.com/kyledarrenanderson2001/CSC3232-Coursework-1"
+    },
+    {
+      "title": "Unity Graphical Scene",
+      "description": "My first graphical level made for my graphics for games module. The lava ocean tiles move with the player to simulate an infinite world. The island terrain is made of sculpted planes using the Unity terrain tools. A freecam is used to explore the level, with additional key binds to trigger visual changes such as a volcanic eruption. Physics objects were used to create a more realistic, less programmed visual effect. Particles are used to indicate ash, smoke and fire. A day night cycle is present in the level to show off dynamic lighting effects.",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        "Volcanic Wasteland Island Level",
+        "Infinite Lava Ocean",
+        "Erupting Volcano",
+        "Orbiting Sun and Moon",
+        "Day and Night Cycle",
+        "Multiple assets used to set a crash-site scene"
+      ],
+      "technologies": [
+        "Unity",
+        "C#"
+      ],
+      "link": "https://github.com/kyledarrenanderson2001/CSC3231-Coursework-1"
     }
   ]
 }

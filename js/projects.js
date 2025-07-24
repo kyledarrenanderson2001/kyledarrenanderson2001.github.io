@@ -30,6 +30,7 @@ export async function loadProjects(jsonPath, containerSelector) {
             const mediaDiv = document.createElement('div');
             mediaDiv.classList.add('project-media');
 
+            let hasValidMedia = false;
             switch (project.mediaType) {
                 case 'singleImage':
                     if (project.image) {
@@ -37,6 +38,7 @@ export async function loadProjects(jsonPath, containerSelector) {
                         img.src = project.image;
                         img.alt = project.title;
                         mediaDiv.appendChild(img);
+                        hasValidMedia = true;
                     }
                     break;
 
@@ -47,12 +49,14 @@ export async function loadProjects(jsonPath, containerSelector) {
                         img.alt = project.title;
                         img.classList.add('gif-media');
                         mediaDiv.appendChild(img);
+                        hasValidMedia = true;
                     }
                     break;
 
                 case 'embeddedVideo':
                     if (project.videoEmbed) {
                         mediaDiv.innerHTML = project.videoEmbed;
+                        hasValidMedia = true;
                     }
                     break;
 
@@ -78,21 +82,18 @@ export async function loadProjects(jsonPath, containerSelector) {
                         });
 
                         carouselContainer.appendChild(slidesDiv);
-
-                        // TODO: Add prev/next buttons & dots if you want
-
                         mediaDiv.appendChild(carouselContainer);
+                        hasValidMedia = true;
                     }
                     break;
 
+                case 'none':
                 default:
-                    if (project.image) {
-                        const img = document.createElement('img');
-                        img.src = project.image;
-                        img.alt = project.title;
-                        mediaDiv.appendChild(img);
-                    }
+                    // Do nothing (no media)
                     break;
+            }
+            if (hasValidMedia) {
+                projectRow.appendChild(mediaDiv);
             }
 
             // Info div
