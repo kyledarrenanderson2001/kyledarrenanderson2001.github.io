@@ -93,7 +93,7 @@
 
 .tech-tag {
     background-color: var(--color-accent);
-    color: var(--color-secondary);
+    color: var(--color-text);
     padding: calc(var(--space-xs) / 2) var(--space-xs);
     border-radius: var(--radius-pill);
     font-size: var(--font-size-xs);

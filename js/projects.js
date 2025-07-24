@@ -12,8 +12,6 @@ export async function loadProjects(jsonPath, containerSelector) {
 
         const data = await res.json();
 
-        // Detect if the JSON wraps projects inside an object with keys (like { personalProjects: [...], universityProjects: [...] })
-        // If so, take the first array it finds, otherwise assume data is an array itself
         const projects = Array.isArray(data)
             ? data
             : (Object.values(data).find(v => Array.isArray(v)) || []);
