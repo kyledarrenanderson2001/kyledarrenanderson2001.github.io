@@ -40,6 +40,143 @@
         "C#"
       ],
       "link": "https://github.com/kyledarrenanderson2001/CSC3231-Coursework-1"
+    },
+    {
+      "title": "Game of Life Pattern Recognition",
+      "description": "My first project in C++, Conways game of life. A basic CLI is used to allow for users to setup the simulation. A multidimensional array is used to track specific constructs and check to see if they are alive for their full lifecycle. Seeds can be saved to and loaded from a text file to showcase the found constructs.",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        "Conways game of life on any grid size",
+        "Save and Load system",
+        "Threading to speed up searching",
+        "Pattern Recognition"
+      ],
+      "technologies": [
+        "C++",
+        "Visual Studio"
+      ],
+      "link": "https://github.com/kyledarrenanderson2001/CSC8501-Coursework-1"
+    },
+    {
+      "title": "C++ Graphical Scene and Renderer",
+      "description": "A graphical scene made in C++. The renderer was built on from taught content. Shaders were coded in openGL. The scene is viewed from a preset camera track that can be toggled into a freecam. It showcases animations, models loaded through a scene graph and dynamic textures. The terrain is generated from a hand drawn heightmap file. Pressing T starts a screen wide effect that ends with the scene an unspecified amount of time in the future with the village in ruins.",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        "FreeCam",
+        "Dynamic Textures",
+        "Post Processing Camera Effects",
+        "Skeletal Animations",
+        "Scene Graph for Organisation",
+        "Custom Shaders"
+      ],
+      "technologies": [
+        "C++",
+        "Visual Studio",
+        "OpenGL",
+        "Nvidia NSights"
+      ],
+      "link": "https://github.com/kyledarrenanderson2001/CSC8502-Coursework-1"
+    },
+    {
+      "title": "C++ Physics Engine + Tech Demo Game",
+      "description": "A physics engine coded in C++ by me. A basic game world and game object system was provided with some additional debug tools and gravity. All collision detection and resolution was coded by me as a part of taught content. The level layout is loaded from a text file. The game is played through a third person camera. The level contains a demonstration of constraints, state based obstacles and collectible rewards. After a time limit the game comes to an end and displays the score. The project includes a basic push down automata system for menu navigation in the CLI. The project also includes a basic demonstration of networking capabilities for the game.",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        "Custom Physics Engine",
+        "Levels Loaded From Files",
+        "Collision Detection and Resolution",
+        "State Machines",
+        "Networking",
+        "AABB and Spherical Bounding Volumes"
+      ],
+      "technologies": [
+        "C++",
+        "Visual Studio",
+        "CMake"
+      ],
+      "link": "https://github.com/kyledarrenanderson2001/CSC8503-Coursework-1"
+    },
+    {
+      "title": "Team Project - Make a Game",
+      "description": "This game is a roguelike game that was made by a team of 8 students including myself. The game has 3 enemy types that spawn throughout a stage. Defeating all enemies or running out of time ends the stage. My part in this project was developing a navigation and AI system for the enemies. I developed a dynamic graph of nodes that would detect walls, steep slopes and mark them as impassable. The enemies use a basic A* navigation system to traverse the level and a state machine to control decision making. I programmed 3 enemy types for the game, A melee charging enemy, a ranged enemy and an Area of Effect enemy.",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        "Dynamic NavMesh System",
+        "State Machine Enemy AI",
+        "A* Implementation",
+        "Unique enemy AIs"
+      ],
+      "technologies": [
+        "C++",
+        "Visual Studio",
+        "CMake"
+      ],
+      "link": "https://github.com/kyledarrenanderson2001/CSC8508-Coursework-1"
+    },
+    {
+      "title": "Undergraduate Dissertation",
+      "description": "For my dissertation I looked into pathfinding for AI agents in online multiplayer games. I initially implemented a basic A* System to act as a baseline. I then started running simulations and looking for areas that I thought the agents could improve. This was mainly the fact that agents got stuck on themselves a lot. I resolved this by having agents check the paths of other agents nearby them to see if they wanted to occupy the same node at the same time, or if they wanted to follow opposing routes along the same set of nodes. I developed several iterations of this and my end result was an increase from 62.32% of agents reaching their destination using A* to 97.12 agents reaching their destination.",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        "Pathfinding System",
+        "Real Time Pathing Adjustments",
+        "A* Implementation",
+        "Intelligent AI Agents"
+      ],
+      "technologies": [
+        "C#",
+        "Unity"
+      ],
+      "link": "https://github.com/kyledarrenanderson2001/CSC3094-Dissertation"
+    },
+    {
+      "title": "Masters Dissertation",
+      "description": "For my masters dissertation I looked into procedurally generated terrain and noise. I looked at 10 different noise generation algorithms and evaluated their performance and aesthetic against each other. I had plans to develop methods of stitching chunks of terrain together but due to the short length of the project I did not get time to implement that. I generated each chunk of terrain using multiple quads. I generated a noise image to use as a heightmap and set the height of each quads corners to the greyscale value of the corresponding pixel on the heightmap. I used Unreal 5's blueprint system to make a triplanar mapping shader to make the terrain look nicer.",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        "Procedural Generation",
+        "Programmatically Generated Noise",
+        "Triplanar Mapping"
+      ],
+      "technologies": [
+        "C++",
+        "Unreal Engine 5",
+        "Blueprints"
+      ],
+      "link": "https://github.com/kyledarrenanderson2001/CSC8498-Dissertation"
+    },
+    {
+      "title": "PySpark Data Science Project",
+      "description": "",
+      "mediaType": "singleImage",
+      "image": "path/to/image.jpg",
+      "videoEmbed": "",
+      "carouselImages": [],
+      "features": [
+        ""
+      ],
+      "technologies": [
+        ""
+      ],
+      "link": "#"
     }
   ]
 }
